@@ -1,2 +1,4 @@
-# quiz
-#100days of code 17: object-based quiz game
+# Trivia game
+Object-based trivia game
+
+#100days of code 17
