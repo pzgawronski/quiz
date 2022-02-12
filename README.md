@@ -1,4 +1,4 @@
 # Trivia game
-Object-based trivia game
+Object-based trivia game.
 
-#100days of code 17
+#100daysofcode 17
