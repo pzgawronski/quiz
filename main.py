@@ -5,8 +5,8 @@ from quiz_brain import QuizBrain
 question_bank = []
 
 for datum in question_data:
-    input_text = datum["text"]
-    input_answer = datum["answer"]
+    input_text = datum["question"]
+    input_answer = datum["correct_answer"]
     output_question = Question(input_text, input_answer)
     question_bank.append(output_question)
 
