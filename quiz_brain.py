@@ -2,6 +2,7 @@ class QuizBrain:
 
     def __init__(self, question_list):
         self.question_number = 0
+        self.user_score = 0
         self.question_list = question_list
 
 
@@ -13,3 +14,13 @@ class QuizBrain:
         current_question = self.question_list[self.question_number]
         self.question_number += 1
         user_answer = input(f"Q.{self.question_number}: {current_question.text} (True/False) ")
+        self.check_answer(user_answer, current_question.answer)
+
+    def check_answer(self, user_answer, correct_answer):
+        if user_answer.lower()[0] == correct_answer.lower()[0]:
+            print("You got it right!")
+            self.user_score += 1
+        else:
+            print("That's wrong!")
+        print(f"The correct answer was {correct_answer}.")
+        print(f"Your current score is {self.user_score}/{self.question_number}")
